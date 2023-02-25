@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+    color: #161616;
+}
+
+:root {
+    --bg-color: hsl(49 37% 94%);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+button {
+    color: #161616;
+}
+
+textarea {
+    width: 21cm;
+    min-height: 25.7cm;
+    padding: 2cm;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: .5cm auto;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    resize: none;
+    color: #161616;
+}
+
+.side-nav li {
+    list-style: decimal-leading-zero;
+    margin: .5cm;
+}
+
+.side-nav li a {
+    text-decoration: none;
+}
+
+.side-nav li a:hover {
+    text-decoration: line-through;
+}
+
+#filename {
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+}
+
