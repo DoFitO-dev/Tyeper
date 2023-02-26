@@ -94,6 +94,10 @@ header {
     font-size: 1.5em;
 }
 
+#nav-title a:hover{
+    color: #161616;
+}
+
 header li {
     list-style: none;
     display: inline-block;
