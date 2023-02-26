@@ -10,10 +10,12 @@
 </head>
 <body>
     
-    <textarea placeholder="Enter your Text here...(500 words)" maxlength="3467" id="text"></textarea>
+    <textarea placeholder="Enter your Text here...(4510 characters)" maxlength="4510" id="text"></textarea>
+    <p class="counter" id="count">0 characters</p>
     <button id="download">Download</button>
     <input placeholder="file name." id="filename">
     <br>
+
     <br>
     <ul class="side-nav">
         <li><a href="./index.html">Home</a></li>
@@ -54,6 +56,13 @@
         })
 
     }
+
+    let Txt = document.getElementById("text");
+    Txt.addEventListener('input', () => {
+        let count = (Txt.value).length;
+        document.getElementById("count").
+        textContent = '${count} characters';
+    });
 
 </script>
 
