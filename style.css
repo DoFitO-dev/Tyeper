@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
 
 * {
     box-sizing: border-box;
@@ -39,7 +40,7 @@ textarea {
 .counter {
     color: #161616;
     text-align:center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #filename {
@@ -70,6 +71,7 @@ header {
     padding: 20px 50px;
     box-shadow: 0 1px 8px #bbae8d;
     border-radius: 5px;
+    letter-spacing: 1px;
 }
 
 #nav-title {
@@ -95,9 +97,95 @@ header a:hover {
 
 /*MAIN*/
 
-section {
+.abt-cont {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
+.abt-container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    max-width: 101%;
+    margin-top: -2px;
+    max-height: 72rem;
+    vertical-align: middle;
+}
+
+.right > * {
+    margin-bottom: 1.1rem;
+    color: #161616;
+}
+
+.right h4 {
+    color: var(--color);
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color);
+    border-radius: 4rem;
+    display: inline-block;
+    padding: 0.3rem .9rem;
+}
+
+.right h1 {
+    line-height: 140%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.right p {
+    color: #747083;
+    font-size: 1.1rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.right a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    position: relative;
+    color: #9d84ff;
+    z-index: 1;
+    transition: .3s linear;
+    box-shadow: 0 0 5px #9d84ff,
+    0 0 25px #9d84ff;
+}
+
+.right a:hover {
+    transition: .3s linear;
+    background: var(--color);
+    box-shadow: 0 0 5px #9d84ff,
+    0 0 25px #9d84ff, 0 0 50px #9d84ff
+    0 0 300px #9d84ff, 0 0 200px #9d84ff;
+    color: #2c3349;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
