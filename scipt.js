@@ -10,6 +10,9 @@ tinymce.init({
     toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' +
     'bulllist numlist outdent indent | link image | print preview meida fullscreen|' +
     'forecolor backcolor emoticons',
+    menu: {
+        favs: {title: 'Menu', items: 'code visualaid | searchreplace | emoticons'}
+    },
     menubar: 'favs file edit view insert format tools table',
     content_style: 'body{font-family:Halvetica,Arial,sans-serif; font-size:16px}'
 });
