@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+    color: #161616;
+}
+
+:root {
+    /*--bg-color: hsl(49 37% 94%);*/
+    --bg-color: #F6EDDC;
+}
+
+::selection {
+    background-color: #bbae8d;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border: 1px solid #756d56;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #756d56;
+    border-radius: 1rem;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+img {
+    width: 20px;
+}
+
+/*MAIN*/
+.abt-cont {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.abt-container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.right > * {
+    margin-bottom: 1.1rem;
+    color: #161616;
+}
+
+.right h1 {
+    line-height: 140%;
+    margin-left: 47%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.right p {
+    color: #747083;
+    font-size: 1.1rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.right a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    margin-left: 45%;
+    position: relative;
+    color: #9b9073;
+    z-index: 1;
+    transition: .3s linear;
+    box-shadow: 0 0 5px #a89e87,
+    0 0 25px #a89e87;
+}
+
+.right a:hover {
+    transition: .3s linear;
+    background: var(--color);
+    box-shadow: 0 0 5px #ccc0a3,
+    0 0 25px #ccc0a3, 0 0 50px #ccc0a3
+    0 0 300px #ccc0a3, 0 0 200px #ccc0a3;
+    color: #756d56;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.bic {
+    align-self: center;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    color: #222222;
+    font-size: 20px;
+    transition: all ease .3s;
+}
+
+.bic:hover {
+    transition: all ease .3s;
+    background-color: #e9d8ba;
+}
+
+footer {
+    border-top: 1px solid #ccc0a3;
+    color: #9b9073;
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p {
+    color: #9b9073;
+}
+
+footer a {
+    color: #9b9073;
+}
+
+.title {
+    text-decoration: underline;
+}

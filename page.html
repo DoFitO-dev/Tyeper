@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Page</title>
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
 </head>
 <body>
-    <h3>Text Editor</h3>
+    <h3><input type="text" placeholder="Untitled" id="til"></h3>
+    <button id="out">OK</button>
 
-    <form action="" method="post">
-        <textarea name="textarea" id="default"></textarea>
-    </form>
+    
+    <div class="texted">
+        <form action="" method="post">
+            <textarea name="textarea" id="default"></textarea>
+        </form>
+    </div>
+
+    <ul class="side-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">How to use. (recommended)</a></li>
+    </ul>
 
     
     <script src="./pkgs/tinymce/tinymce.min.js"></script>
-    <script src="./scipt.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

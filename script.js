@@ -1,7 +1,24 @@
+const txt1 = document.getElementById('til');
+const btn1 = document.getElementById('out');
+const out1 = document.title;
+
+function fun1() {
+    out1.innerHTML = txt1.valueOf;
+}
+
+btn1.addEventListener('OnClick', fun1);
+
+
+
+
+
+
+
+
 tinymce.init({
     selector: 'textarea#default',
     width: 1000,
-    height: 300,
+    height: 1000,
     plugins:[
         'advist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
         'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',
