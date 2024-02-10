@@ -18,7 +18,8 @@ btn1.addEventListener('OnClick', fun1);
 tinymce.init({
     selector: 'textarea#default',
     width: 1000,
-    height: 1000,
+    height: 900,
+    content_css: 'writer',
     plugins:[
         'advist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
         'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',

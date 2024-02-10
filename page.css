@@ -12,7 +12,9 @@ body {
     /*--bg-color: hsl(49 37% 94%);*/
     --bg-color: #F6EDDC;
 }
-
+.box{
+    height: 100px;
+}
 .texted {
     position: absolute;
     top: 50%;

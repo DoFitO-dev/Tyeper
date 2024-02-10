@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+    color: #161616;
+}
+
+:root {
+    /*--bg-color: hsl(49 37% 94%);*/
+    --bg-color: #F6EDDC;
+}
+
+::selection {
+    background-color: #bbae8d;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border: 1px solid #756d56;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #756d56;
+    border-radius: 1rem;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.head {
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.head h1 {
+    
+}
+
+.container {
+    display: flex;
+    border-top: solid 1px #161616;
+}
+
+.box1 {
+    padding: 20px;
+    background-color: #eee0c7;
+    position: sticky;
+    margin-right: 50px;
+    border-right: solid 1px #161616;
+}
+
+.box1 li {
+    margin: 5px;
+}
+
+.box1 li a{
+    font-weight: 900;
+}
