@@ -34,13 +34,11 @@ body {
 }
 
 .head {
-    background-color: pink;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
 }
-.head h1 {
-    
+.head h1, .head p {
+    text-align: center;
 }
 
 .container {
@@ -57,9 +55,14 @@ body {
 }
 
 .box1 li {
-    margin: 5px;
+    margin: 10px;
 }
 
 .box1 li a{
-    font-weight: 900;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.box1 li a:hover {
+    text-decoration: underline;
 }
